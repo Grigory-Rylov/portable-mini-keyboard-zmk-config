@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 //  ##########################################################
@@ -88,73 +87,55 @@
 
         default_layer {
             bindings = <
-&kp SPACE                                         &kp RSHFT
-&kp LBKT   &kp Q     &kp W    &kp E     &kp R     &kp T
-&kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B
+&lt 1 SPACE                              &lt 2 TAB
+&kp U        &kp N  &kp H  &kp G  &kp S  &kp D
+&kp R        &kp A  &kp O  &kp T  &kp E  &kp I
+&kp P        &kp L  &kp B  &kp F  &kp C  &kp M
             >;
         };
 
         NAVIGATION {
             bindings = <
-&kp SPACE                                         &kp RSHFT
-&kp LBKT   &kp Q     &kp W    &kp E     &kp R     &kp T
-&kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B
+&trans                                                                           &lt 3 SLASH
+&kp ESCAPE      &kp Q           &kp BACKSPACE  &kp COMMA         &kp UP_ARROW    &kp PERIOD
+&kp LEFT_BRACE  &kp LEFT_SHIFT  &kp ENTER      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp HOME        &none           &kp END        &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
             >;
         };
 
         FUNCTION {
             bindings = <
-&kp SPACE                                         &kp RSHFT
-&kp LBKT   &kp Q     &kp W    &kp E     &kp R     &kp T
-&kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B
+&trans                                                                 &trans
+&kp LBKT   &kp Q           &kp UNDERSCORE  &kp N7        &kp N8        &kp N9
+&kp MINUS  &kp LEFT_SHIFT  &kp PLUS        &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&kp LSHFT  &kp EQUAL       &kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
             >;
         };
 
         NUMBERS {
             bindings = <
-&kp SPACE                                         &kp RSHFT
-&kp LBKT   &kp Q     &kp W    &kp E     &kp R     &kp T
-&kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B
+&kp SPACE                              &kp RSHFT
+&kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
             >;
         };
 
         MOUSE {
             bindings = <
-&kp SPACE                                         &kp RSHFT
-&kp LBKT   &kp Q     &kp W    &kp E     &kp R     &kp T
-&kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B
+&kp SPACE                              &kp RSHFT
+&kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
             >;
         };
 
         SYMBOLS {
             bindings = <
-&kp SPACE                                         &kp RSHFT
-&kp LBKT   &kp Q     &kp W    &kp E     &kp R     &kp T
-&kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B
-            >;
-        };
-
-        HOTKEYS {
-            bindings = <
-&kp SPACE                                         &kp RSHFT
-&kp LBKT   &kp Q     &kp W    &kp E     &kp R     &kp T
-&kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&kp SPACE                                         &kp RSHFT
-&kp LBKT   &kp Q     &kp W    &kp E     &kp R     &kp T
-&kp LCTRL  &kp A     &kp S    &kp D     &kp F     &kp G
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B
+&kp SPACE                              &kp RSHFT
+&kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
             >;
         };
     };
