@@ -65,77 +65,7 @@
         )
     };
 
-     combos {
-            compatible = "zmk,combos";
-
-            combo_y {
-                timeout-ms = <50>;
-                key-positions = <9 12>;
-                bindings = <&kp Y>;
-            };
-
-            combo_w {
-                            timeout-ms = <50>;
-                            key-positions = <9 6>;
-                            bindings = <&kp W>;
-            };
-            combo_k {
-                            timeout-ms = <50>;
-                            key-positions = <3 12>;
-                            bindings = <&kp K>;
-            };
-            combo_v {
-                timeout-ms = <50>;
-                key-positions = <9 18>;
-                bindings = <&kp V>;
-            };
-            combo_x {
-                timeout-ms = <50>;
-                key-positions = <15 12>;
-                bindings = <&kp X>;
-            };
-            combo_z {
-                timeout-ms = <50>;
-                key-positions = <9 13>;
-                bindings = <&kp Z>;
-            };
-            combo_j {
-                timeout-ms = <50>;
-                key-positions = <8 12>;
-                bindings = <&kp J>;
-            };
-            combo_q {
-                timeout-ms = <50>;
-                key-positions = <9 11>;
-                bindings = <&kp Q>;
-            };
-            combo_enter {
-                timeout-ms = <50>;
-                key-positions = <14 19>;
-                bindings = <&kp ENTER>;
-            };
-            combo_esc {
-                timeout-ms = <50>;
-                key-positions = <2 7>;
-                bindings = <&kp ESCAPE>;
-            };
-            combo_backspace {
-                timeout-ms = <50>;
-                key-positions = <8 13>;
-                bindings = <&kp BACKSPACE>;
-            };
-
-            combo_slash {
-                timeout-ms = <50>;
-                key-positions = <14 7>;
-                bindings = <&kp SLASH>;
-            };
-            combo_boot {
-                timeout-ms = <50>;
-                key-positions = <0 1 14 19>;
-                bindings = <&bootloader>;
-            };
-        };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         //   td_mt_ls: tap_dance_mod_tap {
@@ -159,7 +89,7 @@
 
         default_layer {
             bindings = <
-&lt 1 SPACE                              &lt 2 TAB
+&lt 1 SPACE                              &kp LEFT_SHIFT
 &kp U        &kp N  &kp H  &kp G  &kp S  &kp D
 &kp R        &kp A  &kp O  &kp T  &kp E  &kp I
 &kp P        &kp L  &kp B  &kp F  &kp C  &kp M
@@ -168,10 +98,10 @@
 
         NAVIGATION {
             bindings = <
-&trans                                                                           &lt 3 SLASH
-&kp ESCAPE      &kp Q           &kp BACKSPACE  &kp COMMA         &kp UP_ARROW    &kp PERIOD
-&kp LEFT_BRACE  &kp LEFT_SHIFT  &kp ENTER      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
-&kp HOME        &none           &kp END        &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
+&trans                                                                       &lt 2 SLASH
+&kp K_BACK      &kp Q           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
+&kp LEFT_BRACE  &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp HOME        &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
             >;
         };
 
