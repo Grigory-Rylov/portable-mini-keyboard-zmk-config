@@ -119,6 +119,17 @@
                 key-positions = <2 7>;
                 bindings = <&kp ESCAPE>;
             };
+            combo_backspace {
+                timeout-ms = <50>;
+                key-positions = <8 13>;
+                bindings = <&kp BACKSPACE>;
+            };
+
+            combo_slash {
+                timeout-ms = <50>;
+                key-positions = <14 7>;
+                bindings = <&kp SLASH>;
+            };
             combo_boot {
                 timeout-ms = <50>;
                 key-positions = <0 1 14 19>;
