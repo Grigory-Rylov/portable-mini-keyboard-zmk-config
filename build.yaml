@@ -5,7 +5,7 @@
 # the `include` property, e.g:
 #
 board: [ "nice_nano_v2" ]
-shield: [ "pordable_pad", "settings_reset"]
+shield: [ "portable_pad", "settings_reset"]
 # - shield settings_reset
   # - board: bdn9_rev2
   # - board: nice_nano_v2
