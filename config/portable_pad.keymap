@@ -119,6 +119,11 @@
                 key-positions = <2 7>;
                 bindings = <&kp ESCAPE>;
             };
+            combo_boot {
+                timeout-ms = <50>;
+                key-positions = <0 1 14 19>;
+                bindings = <&bootloader>;
+            };
         };
 
     behaviors {
