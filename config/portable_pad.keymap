@@ -89,7 +89,7 @@
 
         default_layer {
             bindings = <
-&lt 1 SPACE                              &kp LEFT_SHIFT
+&lt 1 SPACE                              &mt RIGHT_SHIFT LG(SPACE)
 &kp U        &kp N  &kp H  &kp G  &kp S  &kp D
 &kp R        &kp A  &kp O  &kp T  &kp E  &kp I
 &kp P        &kp L  &kp B  &kp F  &kp C  &kp M
