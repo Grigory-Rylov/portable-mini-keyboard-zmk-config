@@ -98,10 +98,10 @@
 
         NAVIGATION {
             bindings = <
-&trans                                                                       &lt 2 SLASH
-&kp K_BACK      &kp Q           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
-&kp LEFT_BRACE  &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
-&kp HOME        &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
+&trans                                                                   &lt 2 SLASH
+&kp K_BACK  &kp Q           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
+&mo 3       &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp HOME    &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
             >;
         };
 
@@ -116,10 +116,10 @@
 
         NUMBERS {
             bindings = <
-&kp SPACE                              &kp RSHFT
-&kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
-&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
+&kp SPACE                                    &kp RSHFT
+&none      &none  &none  &kp E  &kp R        &kp T
+&trans     &none  &none  &kp D  &kp F        &kp G
+&none      &none  &none  &kp C  &kp LG(TAB)  &kp LC(TAB)
             >;
         };
 
