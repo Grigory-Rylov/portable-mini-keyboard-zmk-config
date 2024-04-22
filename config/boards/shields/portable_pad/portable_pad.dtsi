@@ -31,10 +31,10 @@
 
         diode-direction = "col2row";
         row-gpios
-            = <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 0 from the schematic file
-            , <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 1 from the schematic file
-            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 2 from the schematic file
-            , <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 3 from the schematic file
+          =  <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 0 from the schematic file
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 1 from the schematic file
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 2 from the schematic file
+            , <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 3 from the schematic file
             ;
     };
 };
