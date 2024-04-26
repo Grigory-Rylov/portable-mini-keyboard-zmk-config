@@ -13,10 +13,10 @@
 //#define OTHER_L 4
 
 #define DEFAULT 0
-#define NAVIGATION   1
-#define NUMBERS   2
-#define FUNCTION  3
-#define MOUSE  4
+#define ALPHA  1
+#define NAVIGATION   2
+#define NUMBERS   3
+#define FUNCTION  4
 #define SYMBOLS 5
 #define HOTKEYS  6
 
@@ -68,75 +68,27 @@
      combos {
                 compatible = "zmk,combos";
 
-                combo_y {
-                    timeout-ms = <50>;
-                    key-positions = <11 14>;
-                    bindings = <&kp Y>;
-                };
-
-                combo_w {
-                    timeout-ms = <50>;
-                    key-positions = <11 6>;
-                    bindings = <&kp W>;
-                };
-
-                combo_k {
-                    timeout-ms = <50>;
-                    key-positions = <3 14>;
-                    bindings = <&kp K>;
-                };
-
-                combo_v {
-                    timeout-ms = <50>;
-                    key-positions = <11 18>;
-                    bindings = <&kp V>;
-                };
-
-                combo_x {
-                    timeout-ms = <50>;
-                    key-positions = <15 14>;
-                    bindings = <&kp X>;
-                };
-
-                combo_z {
-                    timeout-ms = <50>;
-                    key-positions = <11 13>;
-                    bindings = <&kp Z>;
-                };
-
-                combo_j {
-                    timeout-ms = <50>;
-                    key-positions = <8 14>;
-                    bindings = <&kp J>;
-                };
-
-                combo_q {
-                    timeout-ms = <50>;
-                    key-positions = <11 11>;
-                    bindings = <&kp Q>;
-                };
-
                 combo_enter {
                     timeout-ms = <50>;
-                    key-positions = <14 19>;
+                    key-positions = <16 21>;
                     bindings = <&kp ENTER>;
                 };
 
                 combo_esc {
                     timeout-ms = <50>;
-                    key-positions = <2 7>;
+                    key-positions = <4 9>;
                     bindings = <&kp ESCAPE>;
                 };
 
                 combo_backspace {
                     timeout-ms = <50>;
-                    key-positions = <8 13>;
+                    key-positions = <10 15>;
                     bindings = <&kp BACKSPACE>;
                 };
 
                 combo_slash {
                     timeout-ms = <50>;
-                    key-positions = <14 7>;
+                    key-positions = <16 9>;
                     bindings = <&kp SLASH>;
                 };
 
@@ -168,12 +120,22 @@
 
         default_layer {
             bindings = <
-&lt 1 SPACE  &lt 2 ENTER                         &kp LGUI  &mt RIGHT_SHIFT LG(SPACE)
-&kp U        &kp N  &kp H  &kp G  &kp S  &kp D
-&kp R        &kp A  &kp O  &kp T  &kp E  &kp I
-&kp P        &kp L  &kp B  &kp F  &kp C  &kp M
+&lt 2 SPACE  &lt 3 ENTER                         &mo 1  &mt RIGHT_SHIFT LG(SPACE)
+&kp F        &kp P  &kp G  &kp L  &kp D  &kp U
+&kp A        &kp R  &kp S  &kp H  &kp N  &kp E
+&kp C        &kp T  &kp V  &kp M  &kp O  &kp K
             >;
         };
+
+        ALPHA {
+            bindings = <
+&trans      &trans                            &trans     &kp RIGHT_SHIFT
+&kp Q       &kp W           &none      &kp J  &kp L      &kp Y
+&kp Z       &kp X           &kp B      &kp I  &none      &none
+&kp HOME    &none           &none      &none  &kp SQT    &none
+            >;
+        };
+
 
         NAVIGATION {
             bindings = <
@@ -184,7 +146,7 @@
             >;
         };
 
-        FUNCTION {
+        NUMBERS {
             bindings = <
 &trans &none                                             &none         &trans
 &kp LBKT   &kp Q           &kp UNDERSCORE  &kp N7        &kp N8        &kp N9
@@ -193,7 +155,7 @@
             >;
         };
 
-        NUMBERS {
+        FUNCTION {
             bindings = <
 &kp SPACE  &none                &none        &kp RSHFT
 &none      &none  &none  &kp E  &kp R        &kp T
@@ -202,18 +164,18 @@
             >;
         };
 
-        MOUSE {
+        SYMBOLS {
             bindings = <
-&kp SPACE  &none                &none   &kp RSHFT
+&kp SPACE  &none                &none  &kp RSHFT
 &kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
 &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
             >;
         };
 
-        SYMBOLS {
+        HOTKEYS {
             bindings = <
-&kp SPACE  &none                &none  &kp RSHFT
+&kp SPACE  &none                &none   &kp RSHFT
 &kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
 &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
