@@ -70,49 +70,49 @@
 
                 combo_y {
                     timeout-ms = <50>;
-                    key-positions = <9 12>;
+                    key-positions = <11 14>;
                     bindings = <&kp Y>;
                 };
 
                 combo_w {
                     timeout-ms = <50>;
-                    key-positions = <9 6>;
+                    key-positions = <11 6>;
                     bindings = <&kp W>;
                 };
 
                 combo_k {
                     timeout-ms = <50>;
-                    key-positions = <3 12>;
+                    key-positions = <3 14>;
                     bindings = <&kp K>;
                 };
 
                 combo_v {
                     timeout-ms = <50>;
-                    key-positions = <9 18>;
+                    key-positions = <11 18>;
                     bindings = <&kp V>;
                 };
 
                 combo_x {
                     timeout-ms = <50>;
-                    key-positions = <15 12>;
+                    key-positions = <15 14>;
                     bindings = <&kp X>;
                 };
 
                 combo_z {
                     timeout-ms = <50>;
-                    key-positions = <9 13>;
+                    key-positions = <11 13>;
                     bindings = <&kp Z>;
                 };
 
                 combo_j {
                     timeout-ms = <50>;
-                    key-positions = <8 12>;
+                    key-positions = <8 14>;
                     bindings = <&kp J>;
                 };
 
                 combo_q {
                     timeout-ms = <50>;
-                    key-positions = <9 11>;
+                    key-positions = <11 11>;
                     bindings = <&kp Q>;
                 };
 
@@ -142,7 +142,7 @@
 
                 combo_boot {
                     timeout-ms = <50>;
-                    key-positions = <0 1 14 19>;
+                    key-positions = <0 3 16 21>;
                     bindings = <&bootloader>;
                 };
             };
@@ -168,7 +168,7 @@
 
         default_layer {
             bindings = <
-&lt 1 SPACE                              &mt RIGHT_SHIFT LG(SPACE)
+&lt 1 SPACE  &lt 2 ENTER                         &kp LGUI  &mt RIGHT_SHIFT LG(SPACE)
 &kp U        &kp N  &kp H  &kp G  &kp S  &kp D
 &kp R        &kp A  &kp O  &kp T  &kp E  &kp I
 &kp P        &kp L  &kp B  &kp F  &kp C  &kp M
@@ -177,7 +177,7 @@
 
         NAVIGATION {
             bindings = <
-&trans                                                                   &lt 2 SLASH
+&trans      &trans                                       &trans  &lt 2 SLASH
 &kp K_BACK  &kp Q           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
 &mo 3       &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
 &kp HOME    &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
@@ -186,7 +186,7 @@
 
         FUNCTION {
             bindings = <
-&trans                                                                 &trans
+&trans &none                                             &none         &trans
 &kp LBKT   &kp Q           &kp UNDERSCORE  &kp N7        &kp N8        &kp N9
 &kp MINUS  &kp LEFT_SHIFT  &kp PLUS        &kp NUMBER_4  &kp N5        &kp NUMBER_6
 &kp LSHFT  &kp EQUAL       &kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
@@ -195,7 +195,7 @@
 
         NUMBERS {
             bindings = <
-&kp SPACE                                    &kp RSHFT
+&kp SPACE  &none                &none        &kp RSHFT
 &none      &none  &none  &kp E  &kp R        &kp T
 &trans     &none  &none  &kp D  &kp F        &kp G
 &none      &none  &none  &kp C  &kp LG(TAB)  &kp LC(TAB)
@@ -204,7 +204,7 @@
 
         MOUSE {
             bindings = <
-&kp SPACE                              &kp RSHFT
+&kp SPACE  &none                &none   &kp RSHFT
 &kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
 &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
@@ -213,7 +213,7 @@
 
         SYMBOLS {
             bindings = <
-&kp SPACE                              &kp RSHFT
+&kp SPACE  &none                &none  &kp RSHFT
 &kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
 &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
