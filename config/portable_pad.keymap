@@ -16,7 +16,7 @@
 #define ALPHA  1
 #define NAVIGATION   2
 #define NUMBERS   3
-#define FUNCTION  4
+#define MOUSE  4
 #define SYMBOLS 5
 #define HOTKEYS  6
 
@@ -68,30 +68,64 @@
      combos {
                 compatible = "zmk,combos";
 
+                // --- ---
+                // -X- X--
+                // --- ---
+                combo_left_bracket {
+                     timeout-ms = <50>;
+                     key-positions = <11 13>;
+                     bindings = <&kp LEFT_PARENTHESIS>;
+                };
+
+                // --- ---
+                // -X- --X
+                // --- ---
+                combo_right_bracket {
+                     timeout-ms = <50>;
+                     key-positions = <11 15>;
+                     bindings = <&kp RIGHT_PARENTHESIS>;
+                };
+
+                // --- ---
+                // --- ---
+                // X-- --X
                 combo_enter {
                     timeout-ms = <50>;
                     key-positions = <16 21>;
                     bindings = <&kp ENTER>;
                 };
 
+                // X-- --X
+                // --- ---
+                // --- ---
                 combo_esc {
                     timeout-ms = <50>;
                     key-positions = <4 9>;
                     bindings = <&kp ESCAPE>;
                 };
 
+                // --- ---
+                // X-- --X
+                // --- ---
                 combo_backspace {
                     timeout-ms = <50>;
                     key-positions = <10 15>;
                     bindings = <&kp BACKSPACE>;
                 };
 
+                // --- --X
+                // --- ---
+                // X-- ---
                 combo_slash {
                     timeout-ms = <50>;
                     key-positions = <16 9>;
                     bindings = <&kp SLASH>;
                 };
 
+                // X-   -X
+                // --- ---
+                // --- ---
+                // X-- --X
                 combo_boot {
                     timeout-ms = <50>;
                     key-positions = <0 3 16 21>;
@@ -120,7 +154,7 @@
 
         default_layer {
             bindings = <
-&lt 2 SPACE  &lt 3 ENTER                   &mo 1  &mt RIGHT_SHIFT LG(SPACE)
+&lt NAVIGATION SPACE  &lt MOUSE ENTER               &mo ALPHA  &mt RIGHT_SHIFT LG(SPACE)
 &kp F        &kp P       &kp G      &kp L  &kp D  &kp U
 &kp A        &kp R       &kp S      &kp H  &kp N  &kp E
 &kp C        &kp T       &kp V      &kp M  &kp O  &kp K
@@ -155,12 +189,12 @@
             >;
         };
 
-        FUNCTION {
+        MOUSE {
             bindings = <
-&kp SPACE  &none                &none        &kp RSHFT
-&none      &none  &none  &kp E  &kp R        &kp T
-&trans     &none  &none  &kp D  &kp F        &kp G
-&none      &none  &none  &kp C  &kp LG(TAB)  &kp LC(TAB)
+&trans     &trans                                       &trans              &trans
+&none      &none            &none       &msc SCRL_DOWN  &mmv MOVE_UP        &msc SCRL_UP
+&mkp RCLK  &mkp LCLK        &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_RIGHT
+&none      &none            &none       &kp C           &kp LG(TAB)  &kp LC(TAB)
             >;
         };
 
