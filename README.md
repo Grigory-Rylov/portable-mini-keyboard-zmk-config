@@ -3,18 +3,19 @@
 
 ## Layout
 ### Primary layout
+
+```
 FPG     UDL
-
 ARS     HNE
-
 CTV     MOK
-
+```
 ### Alpha layout
+
+```
 QW-     -JY
-
 ZXB     -I-
-
 ---     ---
+```
 
 Combo:
 
