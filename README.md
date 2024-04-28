@@ -1,6 +1,17 @@
 # ZMK прошивка для самодельной переносной клавиатуры
 
 
+##Layout
+### Primary layout
+FPG     UDL
+ARS     HNE
+CTV     MOK
+
+### Alpha layout
+QW-     -JY
+ZXB     -I-
+---     ---
+
 Combo:
 
 ```
