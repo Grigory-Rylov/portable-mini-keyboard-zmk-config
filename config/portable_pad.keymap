@@ -129,10 +129,10 @@
 
         ALPHA {
             bindings = <
-&trans      &trans                                  &trans     &kp RIGHT_SHIFT
-&kp Q       &kp W           &none      &kp J        &kp L      &kp Y
-&kp Z       &kp X           &kp B      &kp K        &kp I      &kp SEMICOLON
-&kp HOME    &none           &none      &kp GRAVE    &kp COMMA  &kp DOT
+&trans      &trans                                          &trans     &kp RIGHT_SHIFT
+&kp Q       &kp W    $kp LEFT_BRACKET   $kp RIGHT_BRACKET   &kp J      &kp Y
+&kp Z       &kp X    &kp B              &kp SLASH           &kp I      &kp SEMICOLON
+&kp HOME    &none    &none              &kp GRAVE           &kp COMMA  &kp DOT
             >;
         };
 
