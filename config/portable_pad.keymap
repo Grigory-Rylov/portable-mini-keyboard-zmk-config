@@ -196,9 +196,9 @@
         MOUSE {
             bindings = <
 &trans     &trans                                       &trans              &trans
-&none      &none            &none       &msc SCRL_DOWN  &mmv MOVE_UP        &msc SCRL_UP
-&mkp RCLK  &mkp LCLK        &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_RIGHT
-&none      &none            &none       &kp C           &kp LG(TAB)  &kp LC(TAB)
+&none      &none            &kp C_VOLUME_UP         &msc SCRL_DOWN  &mmv MOVE_UP        &msc SCRL_UP
+&mkp RCLK  &mkp LCLK        &kp K_MUTE              &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_RIGHT
+&none      &none            &kp &kp C_VOLUME_DOWN   &bt BT_PRV      &bt BT_CLR          &bt BT_NXT
             >;
         };
 
