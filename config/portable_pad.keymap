@@ -177,7 +177,7 @@
 
         NAVIGATION {
             bindings = <
-&trans      &trans                                       &trans  &lt 2 SLASH
+&trans      &trans                                       &trans          &mo NUMBERS
 &kp K_BACK  &kp Q           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
 &mo 3       &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
 &kp HOME    &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
