@@ -1,1 +1,2 @@
-config ZMK_KEYBOARD_NAME        default "OSIK kbdpad"
+config ZMK_KEYBOARD_NAME
+    default "OSIK kbdpad"
