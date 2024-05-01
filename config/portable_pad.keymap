@@ -158,19 +158,19 @@
 
         default_layer {
             bindings = <
-&lt NAVIGATION SPACE  &lt MOUSE ENTER               &mo ALPHA  &mt RIGHT_SHIFT LG(SPACE)
-&kp F        &kp P       &kp G      &kp U  &kp D  &kp L
-&kp A        &kp R       &kp S      &kp H  &kp N  &kp E
-&kp C        &kp T       &kp V      &kp M  &kp O  &kp K
+&lt NAVIGATION SPACE  &lt MOUSE ENTER      &mo ALPHA    &mt RIGHT_SHIFT SPACE
+&kp F        &kp P       &kp G      &kp U  &kp D        &kp L
+&kp A        &kp R       &kp S      &kp H  &kp N        &kp E
+&kp C        &kp T       &kp V      &kp M  &kp O        &kp K
             >;
         };
 
         ALPHA {
             bindings = <
-&trans      &trans                                          &trans     &kp RIGHT_SHIFT
-&kp Q       &kp W    &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp J      &kp Y
-&kp Z       &kp X    &kp B              &kp SLASH           &kp I      &kp SEMICOLON
-&kp HOME    &none    &none              &kp GRAVE           &kp COMMA  &kp DOT
+&trans      &trans                                                 &trans     &kp RIGHT_SHIFT
+&kp Q       &kp W           &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp J      &kp Y
+&kp Z       &kp X           &kp B              &kp SLASH           &kp I      &kp SEMICOLON
+&kp HOME    &kp LG(SPACE)   &none              &kp GRAVE           &kp COMMA  &kp DOT
             >;
         };
 
@@ -178,8 +178,8 @@
         NAVIGATION {
             bindings = <
 &trans      &trans                                       &trans          &mo NUMBERS
-&kp K_BACK  &kp Q           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
-&mo 3       &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp K_BACK  &none           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
+&mo SYMBOLS &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
 &kp HOME    &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
             >;
         };
