@@ -196,7 +196,7 @@
             bindings = <
 &lt NAVIGATION SPACE  &lt MOUSE ENTER      &mo ALPHA    &mt RIGHT_SHIFT SPACE
 &kp F        &kp P       &kp G      &kp U  &kp D        &kp L
-&kp A        &kp R       &kp S      &kp H  &kp N        &kp E
+&kp A        &kp R       &kp S      &kp H  &mt LGUI N   &kp E
 &kp C        &kp T       &kp V      &kp M  &kp O        &kp K
             >;
         };
@@ -205,7 +205,7 @@
             bindings = <
 &trans      &trans                                                 &trans     &kp RIGHT_SHIFT
 &kp Q       &kp W           &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp J      &kp Y
-&kp Z       &kp X           &kp B              &kp SLASH           &kp I      &kp SEMICOLON
+&kp Z       &kp X           &kp B              &kp SLASH           &mt LGUI I &kp SEMICOLON
 &kp HOME    &kp LG(SPACE)   &none              &kp GRAVE           &kp COMMA  &kp DOT
             >;
         };
