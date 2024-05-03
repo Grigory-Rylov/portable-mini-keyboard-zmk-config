@@ -249,10 +249,10 @@
 
         HOTKEYS {
             bindings = <
-&kp SPACE  &none                  &none           &kp RSHFT
-&kp LBKT   &kp Q    &kp W  &kp E  &kp RIGHT_ALT   &kp T
-&kp LCTRL  &kp TAB  &kp S  &kp D  &kp RGUI        &kp RIGHT_CONTROL
-&kp LSHFT  &kp Z    &kp X  &kp C  &kp V           &kp B
+&trans   &none                  &kp RSHFT       &trans
+&none    &none    &none  &none  &kp RIGHT_ALT   &none
+&none    &kp TAB  &none  &none  &kp RGUI        &kp RIGHT_CONTROL
+&none    &none    &none  &none  &none           &none
             >;
         };
     };
