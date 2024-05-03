@@ -177,10 +177,10 @@
 
         NAVIGATION {
             bindings = <
-&trans      &trans                                       &trans          &mo NUMBERS
-&kp K_BACK  &none           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
-&mo SYMBOLS &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
-&kp HOME    &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
+&trans         &trans                                       &trans          &mo NUMBERS
+&kp BACKSPACE  &none           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
+&mo SYMBOLS    &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp HOME       &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
             >;
         };
 
