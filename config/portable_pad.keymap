@@ -131,16 +131,16 @@
                 combo_cmd_c {
                     timeout-ms = <50>;
                     key-positions = <16 14>;
-                    bindings = <&kp SLASH>;
+                    bindings = <&kp LG(C)>;
                 };
 
                 // --- ---
                 // --- -X-
-                // --V ---
+                // --X ---
                 combo_cmd_v {
                     timeout-ms = <50>;
                     key-positions = <18 14>;
-                    bindings = <&kp SLASH>;
+                    bindings = <&kp LG(V)>;
                 };
 
                 // --- ---
@@ -149,7 +149,7 @@
                 combo_cmd_z {
                     timeout-ms = <50>;
                     key-positions = <10 14>;
-                    bindings = <&kp SLASH>;
+                    bindings = <&kp LG(V)>;
                 };
 
                 // --- ---
@@ -158,7 +158,7 @@
                 combo_cmd_x {
                     timeout-ms = <50>;
                     key-positions = <11 14>;
-                    bindings = <&kp SLASH>;
+                    bindings = <&kp LG(X)>;
                 };
 
                 // X-   -X
