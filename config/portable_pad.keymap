@@ -213,7 +213,7 @@
 
         NAVIGATION {
             bindings = <
-&trans         &trans                                       &trans          &mo NUMBERS
+&trans         &kp LGUI                                     &trans          &mo NUMBERS
 &kp BACKSPACE  &none           &kp TAB    &kp COMMA         &kp UP_ARROW    &kp PERIOD
 &mo SYMBOLS    &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW
 &kp HOME       &none           &kp END    &kp LEFT_BRACKET  &kp SQT         &kp RIGHT_BRACKET
@@ -223,15 +223,15 @@
         NUMBERS {
             bindings = <
 &trans     &none                                         &none         &trans
-&kp LBKT   &none           &kp UNDERSCORE  &kp N7        &kp N8        &kp N9
-&kp MINUS  &kp LEFT_SHIFT  &kp PLUS        &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&kp LBKT   &none           &kp UNDERSCORE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&kp MINUS  &kp LEFT_SHIFT  &kp PLUS        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
 &kp LSHFT  &kp EQUAL       &kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
             >;
         };
 
         MOUSE {
             bindings = <
-&trans     &trans                                                   &trans              &trans
+&none      &trans                                                   &mo HOTKEYS         &trans
 &none      &none            &kp C_VOLUME_UP         &msc SCRL_DOWN  &mmv MOVE_UP        &msc SCRL_UP
 &mkp RCLK  &mkp LCLK        &kp K_MUTE              &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_RIGHT
 &none      &bt BT_CLR       &kp C_VOLUME_DOWN       &bt BT_PRV      &none               &bt BT_NXT
@@ -249,10 +249,10 @@
 
         HOTKEYS {
             bindings = <
-&kp SPACE  &none                &none   &kp RSHFT
-&kp LBKT   &kp Q  &kp W  &kp E  &kp R  &kp T
-&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
+&kp SPACE  &none                  &none           &kp RSHFT
+&kp LBKT   &kp Q    &kp W  &kp E  &kp RIGHT_ALT   &kp T
+&kp LCTRL  &kp TAB  &kp S  &kp D  &kp RGUI        &kp RIGHT_CONTROL
+&kp LSHFT  &kp Z    &kp X  &kp C  &kp V           &kp B
             >;
         };
     };
