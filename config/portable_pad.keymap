@@ -125,42 +125,6 @@
                     bindings = <&kp SLASH>;
                 };
 
-                // --- ---
-                // --- -X-
-                // X-- ---
-                combo_cmd_c {
-                    timeout-ms = <50>;
-                    key-positions = <16 14>;
-                    bindings = <&kp LG(C)>;
-                };
-
-                // --- ---
-                // --- -X-
-                // --X ---
-                combo_cmd_v {
-                    timeout-ms = <50>;
-                    key-positions = <18 14>;
-                    bindings = <&kp LG(V)>;
-                };
-
-                // --- ---
-                // X-- -X-
-                // --- ---
-                combo_cmd_z {
-                    timeout-ms = <50>;
-                    key-positions = <10 14>;
-                    bindings = <&kp LG(V)>;
-                };
-
-                // --- ---
-                // -X- -X-
-                // --- ---
-                combo_cmd_x {
-                    timeout-ms = <50>;
-                    key-positions = <11 14>;
-                    bindings = <&kp LG(X)>;
-                };
-
                 // X-   -X
                 // --- ---
                 // --- ---
@@ -203,10 +167,10 @@
 
         ALPHA {
             bindings = <
-&trans      &trans                                                 &trans     &kp RIGHT_SHIFT
-&kp Q       &kp W           &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp J      &kp Y
-&kp Z       &kp X           &kp B              &kp SLASH           &mt LGUI I &kp SEMICOLON
-&kp HOME    &kp LG(SPACE)   &none              &kp GRAVE           &kp COMMA  &kp DOT
+&trans                  &trans                                                 &trans     &kp RIGHT_SHIFT
+&kp Q                   &kp W           &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp J      &kp Y
+&kp Z                   &kp X           &kp B              &kp SLASH           &mt LGUI I &kp SEMICOLON
+&kp LEFT_PARENTHESIS    &kp LG(SPACE)   RIGHT_PARENTHESIS  &kp GRAVE           &kp COMMA  &kp DOT
             >;
         };
 
@@ -234,7 +198,7 @@
 &none      &trans                                                   &mo HOTKEYS         &trans
 &none      &none            &kp C_VOLUME_UP         &msc SCRL_DOWN  &mmv MOVE_UP        &msc SCRL_UP
 &mkp RCLK  &mkp LCLK        &kp K_MUTE              &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_RIGHT
-&none      &bt BT_CLR       &kp C_VOLUME_DOWN       &bt BT_PRV      &none               &bt BT_NXT
+&none      &none            &kp C_VOLUME_DOWN       &msc SCRL_LEFT  &none               &msc SCRL_RIGHT
             >;
         };
 
@@ -249,10 +213,10 @@
 
         HOTKEYS {
             bindings = <
-&trans   &none                  &kp RSHFT       &trans
-&none    &none    &none  &none  &kp RIGHT_ALT   &none
-&none    &kp TAB  &none  &none  &kp RGUI        &kp RIGHT_CONTROL
-&none    &none    &none  &none  &none           &none
+&trans      &none                   &kp RSHFT   &trans
+&none       &none       &bt BT_PRV  &none       &kp RIGHT_ALT   &none
+&none       &kp TAB     &bt BT_CLR  &none       &kp RGUI        &kp RIGHT_CONTROL
+&none       &none       &bt BT_NXT  &none       &none           &none
             >;
         };
     };
