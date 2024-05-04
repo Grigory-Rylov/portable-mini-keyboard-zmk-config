@@ -12,9 +12,9 @@ CTV     MOK
 ### Alpha layout
 
 ```
-QW-     -JY
-ZXB     -I-
----     ---
+QW[     ]JY
+ZXB     /I;
+(-)     ,`.
 ```
 
 Combo:
