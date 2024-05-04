@@ -168,9 +168,9 @@
         ALPHA {
             bindings = <
 &trans                  &trans                                                 &trans     &kp RIGHT_SHIFT
-&kp Q                   &kp W           &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp J      &kp Y
-&kp Z                   &kp X           &kp B              &kp SLASH           &mt LGUI I &kp SEMICOLON
-&kp LEFT_PARENTHESIS    &kp LG(SPACE)   RIGHT_PARENTHESIS  &kp GRAVE           &kp COMMA  &kp DOT
+&kp Q                   &kp W           &kp LEFT_BRACKET        &kp RIGHT_BRACKET   &kp J      &kp Y
+&kp Z                   &kp X           &kp B                   &kp SLASH           &mt LGUI I &kp SEMICOLON
+&kp LEFT_PARENTHESIS    &kp LG(SPACE)   &kp RIGHT_PARENTHESIS   &kp GRAVE           &kp COMMA  &kp DOT
             >;
         };
 
