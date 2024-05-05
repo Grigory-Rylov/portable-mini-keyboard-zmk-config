@@ -77,42 +77,6 @@ Combo:
                     bindings = <&kp SLASH>;
                 };
 
-                // --- ---
-                // --- -X-
-                // X-- ---
-                combo_cmd_c {
-                    timeout-ms = <50>;
-                    key-positions = <16 14>;
-                    bindings = <&kp SLASH>;
-                };
-
-                // --- ---
-                // --- -X-
-                // --V ---
-                combo_cmd_v {
-                    timeout-ms = <50>;
-                    key-positions = <18 14>;
-                    bindings = <&kp SLASH>;
-                };
-
-                // --- ---
-                // X-- -X-
-                // --- ---
-                combo_cmd_z {
-                    timeout-ms = <50>;
-                    key-positions = <10 14>;
-                    bindings = <&kp SLASH>;
-                };
-
-                // --- ---
-                // -X- -X-
-                // --- ---
-                combo_cmd_x {
-                    timeout-ms = <50>;
-                    key-positions = <11 14>;
-                    bindings = <&kp SLASH>;
-                };
-
                 // X-   -X
                 // --- ---
                 // --- ---
@@ -121,6 +85,16 @@ Combo:
                     timeout-ms = <50>;
                     key-positions = <0 3 16 21>;
                     bindings = <&bootloader>;
+                };
+
+                // -X   X-
+                // --- ---
+                // --- ---
+                // X-- --X
+                combo_bt_clr_all {
+                    timeout-ms = <50>;
+                    key-positions = <1 2 16 21>;
+                    bindings = <&bt BT_CLR_ALL>;
                 };
             };
 ```

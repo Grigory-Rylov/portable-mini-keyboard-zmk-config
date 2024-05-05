@@ -134,6 +134,17 @@
                     key-positions = <0 3 16 21>;
                     bindings = <&bootloader>;
                 };
+
+                // -X   X-
+                // --- ---
+                // --- ---
+                // X-- --X
+                combo_bt_clr_all {
+                    timeout-ms = <50>;
+                    key-positions = <1 2 16 21>;
+                    bindings = <&bt BT_CLR_ALL>;
+                };
+
             };
 
     behaviors {
